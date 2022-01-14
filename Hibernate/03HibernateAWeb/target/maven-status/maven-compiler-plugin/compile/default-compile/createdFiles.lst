@@ -1,0 +1,4 @@
+mx\com\tw\dao\PeliculaDAO.class
+mx\com\tw\domain\Pelicula.class
+mx\com\tw\web\ServletControlador.class
+mx\com\tw\servicio\ServicioPeliculas.class

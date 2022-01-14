@@ -1,0 +1,4 @@
+test\OperacionesHibJPA.class
+mx\com\tw\dao\PeliculaDAO.class
+domain\Pelicula.class
+test\HolaMundoHibernate.class

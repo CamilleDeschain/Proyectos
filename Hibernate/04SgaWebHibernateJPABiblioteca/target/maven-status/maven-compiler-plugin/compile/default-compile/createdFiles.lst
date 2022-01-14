@@ -1,0 +1,12 @@
+mx\com\tw\domain\Contacto.class
+mx\com\tw\dao\DomicilioDAO.class
+mx\com\tw\dao\GenericDAO.class
+mx\com\tw\domain\Domicilio.class
+mx\com\tw\test\TestDAOs.class
+mx\com\tw\dao\UsuarioDAO.class
+mx\com\tw\domain\Membresia.class
+mx\com\tw\domain\Usuario.class
+mx\com\tw\dao\ContactoDAO.class
+mx\com\tw\dao\LibroDAO.class
+mx\com\tw\dao\MembresiaDAO.class
+mx\com\tw\domain\Libro.class
