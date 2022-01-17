@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>Plantilla</title>
+
+    </head>
+    <body>
+        <header th:fragment="header">
+
+            <form method="POST" th:action="@{/logout}">
+                <a href="#" onclick="this.parentNode.submit();">Salir</a>
+            </form>
+            <h1 th:text="#{plantilla.titulo}">CL</h1>
+            <br/><br/><br/>
+            <a th:href="@{/(lang=es)}">ES</a>
+            <a th:href="@{/(lang=en)}">En</a>
+        </header>
+
+        
+    </body>
+</html>

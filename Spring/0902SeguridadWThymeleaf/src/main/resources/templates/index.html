@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
     <head>
         <title>Inicio</title>
         <meta charset="UTF-8"/>
@@ -9,17 +10,17 @@
     <body>
         <header th:replace="layout/plantilla :: header"/>
         <br/>
-        <a th:href="@{/agregar}">Crear Libro</a>
+        <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/agregar}">Crear Libro</a>
         <div th:if="${libros != null && !libros.empty}" >
-            
+
             <table border="1">
                 <tr>
                     <th>Nombre</th>
                     <th>Autor</th>
                     <th>editorial</th>
                     <th>costo</th>
-                    <th>Editar</th>
-                    <th>Eliminar</th><!-- comment -->
+                    <th sec:authorize="hasRole('ROLE_ADMIN')">Editar</th>
+                    <th sec:authorize="hasRole('ROLE_ADMIN')">Eliminar</th><!-- comment -->
                 </tr>
 
                 <tr th:each="libro:${libros}">
@@ -27,9 +28,9 @@
                     <td th:text="${libro.autor}">Mostrar Nombre</td>
                     <td th:text="${libro.editorial}">Mostrar Nombre</td>
                     <td th:text="${libro.costo}">Mostrar Nombre</td>
-                    <td><a th:href="@{/editar/} + ${libro.idLibro}" th:text="Editar"/></td>
+                    <td sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/editar/} + ${libro.idLibro}" th:text="Editar"/></td>
                     <!--<td><a th:href="@{/eliminar/} + ${libro.idLibro}" th:text="Eliminar"/></td>-->
-                    <td><a th:href="@{/eliminar(idLibro=${libro.idLibro})}" th:text="Eliminar"/></td>
+                    <td sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/eliminar(idLibro=${libro.idLibro})}" th:text="Eliminar"/></td>
 
                 </tr>
             </table>    
@@ -37,5 +38,6 @@
         <div th:if="${libros == null or libros.empty}" >
             La Lista esta vacia
         </div>
+
     </body>
 </html>
