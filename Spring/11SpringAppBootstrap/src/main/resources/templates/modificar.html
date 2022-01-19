@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
     <head th:replace="layout/plantilla :: head">
         <title>Datos del Libro</title>
@@ -9,6 +9,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
+        <header th:replace="layout/plantilla :: header"/>
+        <section th:replace="layout/editarLibro :: editarLibro"/>
+        <footer th:replace="layout/plantilla :: footer"/>
+        
         <h1>Datos del Libro</h1>
         <a th:href="@{/}">regresar</a>
         <form th:action="@{/guardar}" method="post" th:object="${libro}">
@@ -21,17 +25,17 @@
             <br/>
             <label for="auto">[[#{libro.autor}]]:</label>
             <input type="text" name="autor" th:field="*{autor}"/>
-           
+
 
             <br/>
             <label for="editorial">[[#{libro.editorial}]]:</label>
             <input type="text" name="editorial" th:field="*{editorial}"/>
-            
+
 
             <br/>
             <label for="costo">[[#{libro.costo}]]:</label>
             <input type="number" name="costo" th:field="*{costo}"/>
-           
+
 
             <br/>
             <input type="submit" name="guardar" value="Guardar"/>

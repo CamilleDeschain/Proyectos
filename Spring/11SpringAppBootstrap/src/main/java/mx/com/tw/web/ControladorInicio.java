@@ -27,6 +27,11 @@ public class ControladorInicio {
         log.info("ejecutando el controlador Spring MVC");
         log.info("usuario hizo login: " + user);
         model.addAttribute("libros", libros);
+        int totalLibros=0;
+        for(var p :libros){
+            totalLibros+=1;
+        }
+        model.addAttribute("totalLibros", totalLibros);
         return "index";
     }
 

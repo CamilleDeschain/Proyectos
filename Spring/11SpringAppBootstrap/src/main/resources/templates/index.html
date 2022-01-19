@@ -11,8 +11,7 @@
         <header th:replace="layout/plantilla :: header"/>
         <section th:replace="layout/botonesAgregar :: botonesAgregar"/>
         <section th:replace="layout/listadoLibros :: listadoLibros"/>
-      <!--  <section th:replace="layout/agregarLibro :: agregarLibro"/>
-        "/>   -->     
+        <section th:replace="layout/agregarLibro :: agregarLibro"/>    
         <footer th:replace="layout/plantilla :: footer"/>
         <br/>
         <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/agregar}">[[#{index.crearlibro}]]</a>
@@ -44,6 +43,5 @@
             La Lista esta vacia
         </div>
         <br/>
-
     </body>
 </html>

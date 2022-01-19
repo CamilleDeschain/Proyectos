@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agregar Libro</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <div>TODO write content</div>
+        <section th:fragment="agregarLibro">
+            <div id="agregarLibro" class="modal fade">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-info text-white">
+                            <h5 class="modal-title" th:text="#{index.crearlibro}">Agregar Libro</h5>
+                            <button class="close" data-bs-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <form th:action="@{/guardar}" method="POST" th:object="${libro}" class="was-validated">
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="nombrelibro" th:text="#{libro.nombre}"></label>
+                                    <input type="text" class="form-control" name="nombrelibro" required="true"></input>
+                                </div><!-- comment -->
+                                
+                                <div class="form-group">
+                                    <label for="autor" th:text="#{libro.autor}"></label>
+                                    <input type="text" class="form-control" name="autor" required="true"></input>
+                                </div><!-- comment -->
+                                
+                                <div class="form-group">
+                                    <label for="editorial" th:text="#{libro.editorial}"></label>
+                                    <input type="text" class="form-control" name="editorial" required="true"></input>
+                                </div><!-- comment -->
+                                
+                                <div class="form-group">
+                                    <label for="costo" th:text="#{libro.costo}"></label>
+                                    <input type="number" class="form-control" name="costo" required="true" step="any"></input>
+                                </div><!-- comment -->
+                                
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" type="submit" th:text="#{boton.guardar}">G</button>
+                                </div>
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

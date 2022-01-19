@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/plantilla :: head">
+        <title>Editar Libro</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <section th:fragment="editarLibro">
+
+            <form th:action="@{/guardar}" method="POST" th:object="${libro}" class="was-validated">
+                <input type="hidden" name="idLibro" th:field="*{idLibro}"></input>
+                <section th:replace="layout/botonesEditar :: botonesEditar"/> 
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+    </body>
+</html>
