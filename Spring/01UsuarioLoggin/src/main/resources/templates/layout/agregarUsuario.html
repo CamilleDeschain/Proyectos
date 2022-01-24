@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <title>Agregar Libro</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <section th:fragment="agregarUsuario">
+            <div id="agregarUsuario" class="modal fade">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-info text-white">
+                            <h5 class="modal-title">Registro Usuario</h5>
+                            <button class="close" data-bs-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <form th:action="@{/guardar}" method="POST" th:object="${persona}" class="was-validated">
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="nombre" >nombre</label>
+                                    <input type="text" class="form-control" name="nombre" ></input>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="apellido" >apellido</label>
+                                    <input type="text" class="form-control" name="apellido" ></input>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="user" >user</label>
+                                    <input type="text" class="form-control" name="user" ></input>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="password" >password</label>
+                                    <input type="text" class="form-control" name="password" ></input>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="preguntasecreta" >Pregunta Secreta</label>
+                                    <input type="text" class="form-control" name="preguntasecreta" ></input>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email" >Email</label>
+                                    <input type="text" class="form-control" name="email"></input>
+                                </div>
+                                
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" type="submit" th:text="#{boton.guardar}">G</button>
+                                </div>
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
