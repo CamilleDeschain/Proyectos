@@ -1,4 +1,4 @@
-package com.tw.BusquedaDin.catalogozapatos;
+package com.tw.BusquedaDin.catalogozapatos.App;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
