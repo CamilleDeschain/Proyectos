@@ -1,6 +1,6 @@
 package com.tw.BusquedaDinamica.model;
 
-import com.concesionario.cochesbackend.enums.Color;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.tw.BusquedaDinamica.enums.Color;
 
@@ -8,7 +8,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Min;
 
 @Entity
-public class Equipo {
+public class Computadora {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -17,9 +17,9 @@ public class Equipo {
     @Enumerated(EnumType.STRING)
     private Color color;
     @Min(0)
-    private int km;
+    private int tamanoDisco;
     @ManyToOne(optional = false)
-    @JsonIgnoreProperties("equipos")
+    @JsonIgnoreProperties("coches")
     private Modelo modelo;
 
     public long getId() {
@@ -54,12 +54,12 @@ public class Equipo {
         this.color = color;
     }
 
-    public int getKm() {
-        return km;
+    public int getTamanoDisco() {
+        return tamanoDisco;
     }
 
-    public void setKm(int km) {
-        this.km = km;
+    public void setTamanoDisco(int tamanoDisco) {
+        this.tamanoDisco = tamanoDisco;
     }
 
     public Modelo getModelo() {

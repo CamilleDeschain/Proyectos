@@ -1,9 +1,6 @@
-package com.concesionario.cochesbackend.controller;
+package com.tw.BusquedaDinamica.controller;
 
-import com.concesionario.cochesbackend.criteria.CocheCriteria;
-import com.concesionario.cochesbackend.dto.BusquedaDTO;
-import com.concesionario.cochesbackend.enums.Color;
-import com.concesionario.cochesbackend.service.CocheService;
+
 import io.github.jhipster.service.filter.BooleanFilter;
 import io.github.jhipster.service.filter.IntegerFilter;
 import io.github.jhipster.service.filter.StringFilter;
@@ -14,7 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+/*
 @RestController
 @RequestMapping("/coche")
 @CrossOrigin(origins = "http://localhost:4200")
@@ -24,10 +21,10 @@ public class CocheController {
     CocheService cocheService;
 
     @PostMapping("/list")
-    public ResponseEntity<List<com.concesionario.cochesbackend.model.Equipo>> list(@RequestBody BusquedaDTO busquedaDTO){
+    public ResponseEntity<List<com.concesionario.cochesbackend.model.Computadora>> list(@RequestBody BusquedaDTO busquedaDTO){
         CocheCriteria cocheCriteria = createCriteria(busquedaDTO);
-        List<com.concesionario.cochesbackend.model.Equipo> list = cocheService.findByCriteria(cocheCriteria);
-        return new ResponseEntity<List<com.concesionario.cochesbackend.model.Equipo>>(list, HttpStatus.OK);
+        List<com.concesionario.cochesbackend.model.Computadora> list = cocheService.findByCriteria(cocheCriteria);
+        return new ResponseEntity<List<com.concesionario.cochesbackend.model.Computadora>>(list, HttpStatus.OK);
     }
 
     private CocheCriteria createCriteria(BusquedaDTO dto){
@@ -84,3 +81,4 @@ public class CocheController {
         return cocheCriteria;
     }
 }
+*/

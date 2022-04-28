@@ -21,7 +21,7 @@ public class Modelo {
     private Marca marca;
     @OneToMany(mappedBy = "modelo")
     @JsonIgnore
-    private Set<Equipo> equipos = new HashSet<>();
+    private Set<Computadora> computadoras = new HashSet<>();
 
     public long getId() {
         return id;
@@ -47,11 +47,11 @@ public class Modelo {
         this.marca = marca;
     }
 
-    public Set<Equipo> getEquipos() {
-        return equipos;
+    public Set<Computadora> getComputadoras() {
+        return computadoras;
     }
 
-    public void setEquipos(Set<Equipo> equipos) {
-        this.equipos = equipos;
+    public void setComputadoras(Set<Computadora> computadoras) {
+        this.computadoras = computadoras;
     }
 }

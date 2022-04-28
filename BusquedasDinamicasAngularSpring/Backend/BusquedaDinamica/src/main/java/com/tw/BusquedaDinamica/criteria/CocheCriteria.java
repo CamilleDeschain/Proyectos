@@ -1,11 +1,11 @@
-package com.concesionario.cochesbackend.criteria;
+package com.tw.BusquedaDinamica.criteria;
 
-import com.concesionario.cochesbackend.enums.Color;
+
 import io.github.jhipster.service.filter.BooleanFilter;
 import io.github.jhipster.service.filter.Filter;
 import io.github.jhipster.service.filter.IntegerFilter;
 import io.github.jhipster.service.filter.StringFilter;
-
+/*
 public class CocheCriteria {
 
     public static class ColorFilter extends Filter<Color>{}
@@ -64,3 +64,4 @@ public class CocheCriteria {
         this.km = km;
     }
 }
+*/

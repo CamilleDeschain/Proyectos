@@ -1,12 +1,13 @@
 package com.tw.BusquedaDinamica.dto;
-
+/*
 public class BusquedaDTO {
     private String marca;
     private String modelo;
     private String version;
     private String cambio;
     private String color;
-
+    private Integer kmDesde;
+    private Integer kmHasta;
 
     public String getMarca() {
         return marca;
@@ -48,4 +49,20 @@ public class BusquedaDTO {
         this.color = color;
     }
 
+    public Integer getKmDesde() {
+        return kmDesde;
+    }
+
+    public void setKmDesde(Integer kmDesde) {
+        this.kmDesde = kmDesde;
+    }
+
+    public Integer getKmHasta() {
+        return kmHasta;
+    }
+
+    public void setKmHasta(Integer kmHasta) {
+        this.kmHasta = kmHasta;
+    }
 }
+*/
