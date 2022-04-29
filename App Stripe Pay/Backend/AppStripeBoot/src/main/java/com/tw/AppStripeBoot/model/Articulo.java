@@ -1,4 +1,4 @@
-package com.cavanosa.TutorialStripe.model;
+package com.tw.AppStripeBoot.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;

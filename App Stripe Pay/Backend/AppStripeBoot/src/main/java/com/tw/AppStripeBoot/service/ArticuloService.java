@@ -1,7 +1,8 @@
-package com.cavanosa.TutorialStripe.service;
+package com.tw.AppStripeBoot.service;
 
-import com.cavanosa.TutorialStripe.model.Articulo;
-import com.cavanosa.TutorialStripe.repository.ArticuloRepository;
+
+import com.tw.AppStripeBoot.model.Articulo;
+import com.tw.AppStripeBoot.repository.ArticuloRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,9 +1,10 @@
-package com.cavanosa.TutorialStripe.service;
+package com.tw.AppStripeBoot.service;
 
-import com.cavanosa.TutorialStripe.http.PaymentIntentDto;
+
 import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.PaymentIntent;
+import com.tw.AppStripeBoot.http.PaymentIntentDto;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 

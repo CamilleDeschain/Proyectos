@@ -1,9 +1,10 @@
-package com.cavanosa.TutorialStripe.controller;
+package com.tw.AppStripeBoot.controller;
 
-import com.cavanosa.TutorialStripe.http.PaymentIntentDto;
-import com.cavanosa.TutorialStripe.service.PaymentService;
+
 import com.stripe.exception.StripeException;
 import com.stripe.model.PaymentIntent;
+import com.tw.AppStripeBoot.http.PaymentIntentDto;
+import com.tw.AppStripeBoot.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
