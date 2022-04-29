@@ -19,7 +19,7 @@ public class Computadora {
     @Min(0)
     private int tamanoDisco;
     @ManyToOne(optional = false)
-    @JsonIgnoreProperties("coches")
+    @JsonIgnoreProperties("computadoras")
     private Modelo modelo;
 
     public long getId() {

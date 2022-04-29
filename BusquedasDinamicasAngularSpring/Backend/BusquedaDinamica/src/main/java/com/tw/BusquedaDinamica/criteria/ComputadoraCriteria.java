@@ -1,12 +1,12 @@
 package com.tw.BusquedaDinamica.criteria;
 
+import com.tw.BusquedaDinamica.enums.Color;
 
 import io.github.jhipster.service.filter.BooleanFilter;
 import io.github.jhipster.service.filter.Filter;
 import io.github.jhipster.service.filter.IntegerFilter;
 import io.github.jhipster.service.filter.StringFilter;
-/*
-public class CocheCriteria {
+public class ComputadoraCriteria {
 
     public static class ColorFilter extends Filter<Color>{}
     private StringFilter marca;
@@ -14,7 +14,7 @@ public class CocheCriteria {
     private StringFilter version;
     private BooleanFilter cambio;
     private ColorFilter color;
-    private IntegerFilter km;
+    private IntegerFilter tamanoDisco;
 
     public StringFilter getMarca() {
         return marca;
@@ -56,12 +56,11 @@ public class CocheCriteria {
         this.color = color;
     }
 
-    public IntegerFilter getKm() {
-        return km;
+    public IntegerFilter getTamanoDisco() {
+        return tamanoDisco;
     }
 
-    public void setKm(IntegerFilter km) {
-        this.km = km;
+    public void setTamanoDisco(IntegerFilter tamanoDisco) {
+        this.tamanoDisco = tamanoDisco;
     }
 }
-*/

@@ -1,6 +1,10 @@
 package com.tw.BusquedaDinamica.controller;
 
-
+import com.tw.BusquedaDinamica.criteria.ComputadoraCriteria;
+import com.tw.BusquedaDinamica.dto.BusquedaDTO;
+import com.tw.BusquedaDinamica.enums.Color;
+import com.tw.BusquedaDinamica.model.Computadora;
+import com.tw.BusquedaDinamica.service.ComputadoraService;
 import io.github.jhipster.service.filter.BooleanFilter;
 import io.github.jhipster.service.filter.IntegerFilter;
 import io.github.jhipster.service.filter.StringFilter;
@@ -9,41 +13,40 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-/*
+
 @RestController
-@RequestMapping("/coche")
+@RequestMapping("/computadora")
 @CrossOrigin(origins = "http://localhost:4200")
-public class CocheController {
+public class ComputadoraController {
 
     @Autowired
-    CocheService cocheService;
+    ComputadoraService computadoraService;
 
     @PostMapping("/list")
-    public ResponseEntity<List<com.concesionario.cochesbackend.model.Computadora>> list(@RequestBody BusquedaDTO busquedaDTO){
-        CocheCriteria cocheCriteria = createCriteria(busquedaDTO);
-        List<com.concesionario.cochesbackend.model.Computadora> list = cocheService.findByCriteria(cocheCriteria);
-        return new ResponseEntity<List<com.concesionario.cochesbackend.model.Computadora>>(list, HttpStatus.OK);
+    public ResponseEntity<List<Computadora>> list(@RequestBody BusquedaDTO busquedaDTO){
+        ComputadoraCriteria computadoraCriteria = createCriteria(busquedaDTO);
+        List<Computadora> list = computadoraService.findByCriteria(computadoraCriteria);
+        return new ResponseEntity<List<Computadora>>(list, HttpStatus.OK);
     }
 
-    private CocheCriteria createCriteria(BusquedaDTO dto){
-        CocheCriteria cocheCriteria = new CocheCriteria();
+    private ComputadoraCriteria createCriteria(BusquedaDTO dto){
+        ComputadoraCriteria computadoraCriteria = new ComputadoraCriteria();
         if(dto!=null){
             if(!StringUtils.isBlank(dto.getMarca())){
                 StringFilter filter = new StringFilter();
                 filter.setEquals(dto.getMarca());
-                cocheCriteria.setMarca(filter);
+                computadoraCriteria.setMarca(filter);
             }
             if(!StringUtils.isBlank(dto.getModelo())){
                 StringFilter filter = new StringFilter();
                 filter.setEquals(dto.getModelo());
-                cocheCriteria.setModelo(filter);
+                computadoraCriteria.setModelo(filter);
             }
             if(!StringUtils.isBlank(dto.getVersion())){
                 StringFilter filter = new StringFilter();
                 filter.setContains(dto.getVersion());
-                cocheCriteria.setVersion(filter);
+                computadoraCriteria.setVersion(filter);
             }
             if(!StringUtils.isBlank(dto.getCambio())){
                 BooleanFilter filter = new BooleanFilter();
@@ -58,27 +61,26 @@ public class CocheController {
                             filter.setEquals(false);
                             break;
                 }
-                cocheCriteria.setCambio(filter);
+                computadoraCriteria.setCambio(filter);
             }
             if(!StringUtils.isBlank(dto.getColor())){
-                CocheCriteria.ColorFilter filter = new CocheCriteria.ColorFilter();
+                ComputadoraCriteria.ColorFilter filter = new ComputadoraCriteria.ColorFilter();
                 String color = dto.getColor().toUpperCase();
                 filter.setEquals(Color.valueOf(color));
-                cocheCriteria.setColor(filter);
+                computadoraCriteria.setColor(filter);
             }
-            if(dto.getKmDesde()!=null || dto.getKmHasta()!=null){
+            if(dto.getTamanoDesde()!=null || dto.getTamanoHasta()!=null){
                 IntegerFilter filter = new IntegerFilter();
-                if(dto.getKmDesde()!=null){
-                    filter.setGreaterThanOrEqual(dto.getKmDesde());
-                    cocheCriteria.setKm(filter);
+                if(dto.getTamanoDesde()!=null){
+                    filter.setGreaterThanOrEqual(dto.getTamanoDesde());
+                    computadoraCriteria.setTamanoDisco(filter);
                 }
-                if(dto.getKmHasta()!=null){
-                    filter.setLessThanOrEqual(dto.getKmHasta());
-                    cocheCriteria.setKm(filter);
+                if(dto.getTamanoHasta()!=null){
+                    filter.setLessThanOrEqual(dto.getTamanoHasta());
+                    computadoraCriteria.setTamanoDisco(filter);
                 }
             }
         }
-        return cocheCriteria;
+        return computadoraCriteria;
     }
 }
-*/
