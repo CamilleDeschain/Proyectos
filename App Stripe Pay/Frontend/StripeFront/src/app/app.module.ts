@@ -32,7 +32,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NgbModalModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
-    NgxStripeModule.forRoot('pk_test_51Ku2B9DZH1qkMq5P8stKZcexSVSKxF3w01anGGSu2qwijUrASkNhuCFhXYfysUgVqmOFby7fdyDE2WNyArt3AUZS00XaajavA0'),
+    NgxStripeModule.forRoot('public code '),
     HttpClientModule,
     ReactiveFormsModule
   ],
