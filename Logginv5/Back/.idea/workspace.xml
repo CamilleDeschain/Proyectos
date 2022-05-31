@@ -1,120 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cd456f95-70a6-4715-9187-1496d4844a21" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/.vs/ControlIngresosGastos/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/.vs/ControlIngresosGastos/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/.vs/ControlIngresosGastos/v17/.futdcache.v1" beforeDir="false" afterPath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/.vs/ControlIngresosGastos/v17/.futdcache.v1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/.vs/ControlIngresosGastos/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/.vs/ControlIngresosGastos/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/ControlIngresosGastos.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/ControlIngresosGastos.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/obj/ControlIngresosGastos.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/obj/ControlIngresosGastos.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/obj/Debug/net5.0/ControlIngresosGastos.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/obj/Debug/net5.0/ControlIngresosGastos.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/obj/Debug/net5.0/ControlIngresosGastos.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/obj/Debug/net5.0/ControlIngresosGastos.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../ControlGastosCSharp/ControlIngresosGastos/obj/project.nuget.cache" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/crud/emailpassword/controller/EmailController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/crud/emailpassword/dto/ChangePasswordDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/crud/security/service/UsuarioService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/crud/security/controller/AuthController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="34" column="36" selection-start-line="33" selection-start-column="3" selection-end-line="34" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/crud/security/dto/LoginUsuario.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/crud/security/dto/NuevoUsuario.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/crud/emailpassword/dto/EmailValuesDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="27" />
-              <folding>
-                <element signature="e#668#669#0" expanded="true" />
-                <element signature="e#708#709#0" expanded="true" />
-                <element signature="e#1112#1113#0" expanded="true" />
-                <element signature="e#1152#1153#0" expanded="true" />
-                <element signature="e#1192#1193#0" expanded="true" />
-                <element signature="e#1228#1229#0" expanded="true" />
-                <element signature="e#1286#1287#0" expanded="true" />
-                <element signature="e#1336#1337#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/crud/emailpassword/service/EmailService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -125,7 +30,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -151,12 +56,36 @@
       </list>
     </option>
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
     <option name="height" value="988" />
   </component>
+  <component name="ProjectId" id="28ilSozRmErLBylhVEWA8qmohXe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -251,23 +180,17 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1627856552072" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CrudApplication">
     <configuration name="CrudApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tutorial.crud.CrudApplication" />
       <module name="crud" />
@@ -281,12 +204,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CrudApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Back" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tw.crud.CrudApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CrudApplication" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -297,6 +228,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602595099698</updated>
+      <workItem from="1651707292426" duration="1008000" />
+      <workItem from="1653338181407" duration="597000" />
+      <workItem from="1654027284645" duration="596000" />
     </task>
     <servers />
   </component>
@@ -332,6 +266,9 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/crud/util/CreateRoles.java">
