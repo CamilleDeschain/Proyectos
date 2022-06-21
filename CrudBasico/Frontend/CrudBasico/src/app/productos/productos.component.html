@@ -1,0 +1,31 @@
+<div class="container">
+  <h2 class="text-center">Productos</h2>
+  <table class="table table-dark text-center">
+    <thead>
+      <tr>
+        <th scope="col" (click)="setOrder('id')">ID</th>
+        <th scope="col" (click)="setOrder('nombre')">Nombre</th>
+        <th scope="col" (click)="setOrder('tipo')">Tipo</th>
+        <th scope="col"><i class="fas fa-sort" (click)="sort()"></i></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let producto of productos">
+        <th>{{producto.id}}</th>
+        <td>{{producto.nombre}}</td>
+        <td>{{producto.tipo}}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-angle-double-left fa-2x" (click)="rewind()"></i></td>
+        <td colspan="2">
+          <span *ngFor="let p of totalPages; let i = index">
+            <a style="cursor: pointer;" (click)="setPage(i)"
+            [ngClass]="{'text-primary': i === page }">&nbsp;{{ i+1 }}&nbsp; </a>
+          </span>
+        </td>
+        <td><i class="fas fa-angle-double-right fa-2x" (click)="forward()"></i></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
